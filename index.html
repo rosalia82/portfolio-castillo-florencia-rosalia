@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florencia Rosalía Castillo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <span class="logo-text">Florencia</span>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#inicio" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#proyectos" class="nav__link">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacto" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Sección Inicio -->
+        <section class="home section" id="inicio">
+            <div class="home__container container">
+                <div class="home__content">
+                    <div class="home__img" data-animate="fadeInLeft">
+                        <img src="imagenes/foto de perfil.jpg" alt="Florencia Rosalía Castillo - Diseñadora Multimedial" class="home__photo">
+                        <div class="home__img-overlay"></div>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title" data-animate="fadeInUp">
+                            <span class="home__name">Florencia Rosalía Castillo</span>
+                        </h1>
+                        <p class="home__profession" data-animate="fadeInUp" data-delay="200">
+                            Diseñadora Multimedial en formación | Community Manager | Creadora de contenido
+                        </p>
+                        <div class="home__buttons" data-animate="fadeInUp" data-delay="400">
+                            <a href="#proyectos" class="button button--primary">
+                                <span>Ver Proyectos</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contacto" class="button button--outline">
+                                <span>Contactar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator" data-animate="bounce">
+                    <span>Scroll</span>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section class="about section" id="sobre-mi">
+            <div class="container">
+                <h2 class="section__title" data-animate="fadeInUp">
+                    Sobre <span class="accent">Mí</span>
+                </h2>
+                <div class="about__container">
+                    <div class="about__content">
+                        <div class="about__text" data-animate="fadeInLeft">
+                            <p class="about__description">
+                                Diseñadora multimedial en formación con experiencia freelance en diseño gráfico, gestión de redes sociales, producción audiovisual y desarrollo web. He trabajado con marcas locales de distintos rubros como gastronomía, mobiliario y salud, aportando soluciones creativas desde la identidad visual hasta la estrategia de comunicación digital.
+                            </p>
+                            <p class="about__description">
+                                Me destaco por mi manejo de herramientas de diseño, edición y programación, y por mi capacidad para adaptarme a distintas necesidades comunicacionales.
+                            </p>
+                        </div>
+                        <div class="about__info" data-animate="fadeInRight">
+                            <div class="info__group">
+                                <h3 class="info__title">Información de Contacto</h3>
+                                <div class="info__item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Catamarca, Argentina</span>
+                                </div>
+                                <div class="info__item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>3834566284</span>
+                                </div>
+                                <div class="info__item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>castilloflorenciarosalia@gmail.com.ar</span>
+                                </div>
+                            </div>
+                            <div class="info__group">
+                                <h3 class="info__title">Modalidad de Trabajo</h3>
+                                <p>Freelance o remoto</p>
+                            </div>
+                            <div class="info__group">
+                                <h3 class="info__title">Intereses</h3>
+                                <div class="interests">
+                                    <span class="interest-tag">Branding</span>
+                                    <span class="interest-tag">Animación</span>
+                                    <span class="interest-tag">Comunicación Digital</span>
+                                    <span class="interest-tag">Diseño Audiovisual</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Herramientas -->
+        <section class="skills section">
+            <div class="container">
+                <h2 class="section__title" data-animate="fadeInUp">
+                    Herramientas y <span class="accent">Habilidades</span>
+                </h2>
+                <div class="skills__container" data-animate="fadeInUp" data-delay="200">
+                    <div class="skill__item" data-skill="photoshop">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="skill__item" data-skill="illustrator">
+                        <i class="fas fa-pen-nib"></i>
+                        <span>Illustrator</span>
+                    </div>
+                    <div class="skill__item" data-skill="after-effects">
+                        <i class="fas fa-video"></i>
+                        <span>After Effects</span>
+                    </div>
+                    <div class="skill__item" data-skill="premiere">
+                        <i class="fas fa-film"></i>
+                        <span>Premiere</span>
+                    </div>
+                    <div class="skill__item" data-skill="audition">
+                        <i class="fas fa-microphone"></i>
+                        <span>Audition</span>
+                    </div>
+                    <div class="skill__item" data-skill="html">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill__item" data-skill="css">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill__item" data-skill="javascript">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill__item" data-skill="wordpress">
+                        <i class="fab fa-wordpress"></i>
+                        <span>WordPress</span>
+                    </div>
+                    <div class="skill__item" data-skill="figma">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill__item" data-skill="cinema4d">
+                        <i class="fas fa-cube"></i>
+                        <span>Cinema 4D</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="projects section" id="proyectos">
+            <div class="container">
+                <h2 class="section__title" data-animate="fadeInUp">
+                    Mis <span class="accent">Proyectos</span>
+                </h2>
+                <div class="projects__container">
+                    <!-- Proyecto 1: Consultorio de Kinesiología -->
+                    <article class="project__card" data-animate="scaleIn">
+                        <div class="project__img">
+                            <img src="imagenes/proyectocon/Mesa de trabajo 1.jpg" alt="Consultorio de Kinesiología y Fisioterapia">
+                            <div class="project__overlay">
+                                <button class="project__btn" onclick="openProject('kinesiology')">
+                                    <i class="fas fa-eye"></i>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Consultorio de Kinesiología y Fisioterapia</h3>
+                            <p class="project__description">Diseño integral de comunicación visual y estrategia digital para servicios de salud.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Diseño Gráfico</span>
+                                <span class="project__tag">Redes Sociales</span>
+                                <span class="project__tag">Audiovisual</span>
+                            </div>
+                            <span class="project__date">Ene 2025 – Jul 2025</span>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2: KS Hogar -->
+                    <article class="project__card" data-animate="scaleIn" data-delay="200">
+                        <div class="project__img">
+                            <img src="imagenes/proyectoks/Mesa de trabajo 1.jpg" alt="KS Hogar">
+                            <div class="project__overlay">
+                                <button class="project__btn" onclick="openProject('ks-hogar')">
+                                    <i class="fas fa-eye"></i>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">KS Hogar</h3>
+                            <p class="project__description">Identidad visual completa y gestión de redes sociales para marca de mobiliario.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Branding</span>
+                                <span class="project__tag">Community Management</span>
+                                <span class="project__tag">Contenido</span>
+                            </div>
+                            <span class="project__date">2024</span>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3: Proyecto Académico -->
+                    <article class="project__card" data-animate="scaleIn" data-delay="400">
+                        <div class="project__img">
+                            <img src="imagenes/proyectofac/Mesa de trabajo 1.jpg" alt="Proyecto Académico">
+                            <div class="project__overlay">
+                                <button class="project__btn" onclick="openProject('academic')">
+                                    <i class="fas fa-eye"></i>
+                                    Ver Proyecto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Proyecto Académico – Facultad</h3>
+                            <p class="project__description">Proyecto académico: Diseño de Jelly Ink, app móvil para conectar artistas visuales, compartir trabajos y colaborar en proyectos. Incluyó logotipo, identidad visual y prototipo de interfaz.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Diseño</span>
+                                <span class="project__tag">UX/UI</span>
+                                <span class="project__tag">Prototipado</span>
+                                <span class="project__tag">Branding</span>
+                                <span class="project__tag">Identidad Visual</span>
+                            </div>
+                            <span class="project__date">2024</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section class="contact section" id="contacto">
+            <div class="container">
+                <h2 class="section__title" data-animate="fadeInUp">
+                    <span class="accent">Contacto</span>
+                </h2>
+                <div class="contact__container-simple">
+                    <div class="contact__content-center" data-animate="fadeInUp">
+                        <h3 class="contact__title">¡Trabajemos juntos!</h3>
+                        <p class="contact__description">
+                            ¿Tienes un proyecto en mente? Me encantaría conocer más sobre tu idea.
+                        </p>
+                        
+                        <div class="contact__info-cards">
+                            <div class="info-card" data-animate="fadeInLeft" data-delay="200">
+                                <div class="info-card__icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-card__content">
+                                    <h4>Ubicación</h4>
+                                    <p>Catamarca, Argentina</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-card" data-animate="fadeInUp" data-delay="400">
+                                <div class="info-card__icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-card__content">
+                                    <h4>Teléfono</h4>
+                                    <p>3834566284</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-card" data-animate="fadeInRight" data-delay="600">
+                                <div class="info-card__icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-card__content">
+                                    <h4>Email</h4>
+                                    <p>castilloflorenciarosalia@gmail.com.ar</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social" data-animate="fadeInUp" data-delay="800">
+                            <h4 class="social__title">Seguíme en:</h4>
+                            <div class="social__links">
+                                <a href="#" class="social__link">
+                                    <i class="fab fa-behance"></i>
+                                    <span>Behance</span>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copy">
+                    © 2025 Florencia Rosalía Castillo. Todos los derechos reservados.
+                </p>
+                <a href="#inicio" class="footer__top">
+                    <i class="fas fa-arrow-up"></i>
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para proyectos -->
+    <div class="modal" id="project-modal">
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeProject()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal__body" id="modal-body">
+                <!-- El contenido se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
