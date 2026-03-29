@@ -1,355 +1,441 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florencia Rosalía Castillo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Florencia Rosalia Castillo — Multimedia Designer specializing in branding, social media content, digital design, photography, UI design, and 3D visuals using Blender and Cinema 4D.">
+    <meta name="keywords" content="multimedia designer, branding, social media design, UI design, Blender, Cinema 4D, digital design, photography, Catamarca, Argentina">
+    <meta name="author" content="Florencia Rosalia Castillo">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Florencia Rosalia Castillo — Multimedia Designer">
+    <meta property="og:description" content="Branding, social media visuals, digital design, and 3D — available for creative opportunities and collaborations.">
+    <meta property="og:type" content="website">
+
+    <title>FLORENCIA ROSALIA CASTILLO – Multimedia Designer</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header class="header" id="header">
-        <nav class="nav">
-            <div class="nav__logo">
-                <span class="logo-text">Florencia</span>
-            </div>
-            <ul class="nav__menu" id="nav-menu">
-                <li class="nav__item">
-                    <a href="#inicio" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#sobre-mi" class="nav__link">Sobre mí</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#proyectos" class="nav__link">Proyectos</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contacto" class="nav__link">Contacto</a>
-                </li>
-            </ul>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header role="banner">
+        <nav aria-label="Main navigation">
+            <div class="logo" aria-label="Florencia Rosalia Castillo — Home">FLORENCIA ROSALIA CASTILLO</div>
+            <div class="nav-links">
+                <a href="#work"     data-en="Clients"  data-es="Clientes">Clients</a>
+                <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="#about"   data-en="About"   data-es="Acerca">About</a>
+                <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+                <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+                <div class="lang-switcher" role="group" aria-label="Language selector">
+                    <button class="lang-btn active" data-lang="en" aria-pressed="true" aria-label="Switch to English">EN</button>
+                    <span class="lang-divider" aria-hidden="true">/</span>
+                    <button class="lang-btn" data-lang="es" aria-pressed="false" aria-label="Cambiar a Español">ES</button>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="main">
-        <!-- Sección Inicio -->
-        <section class="home section" id="inicio">
-            <div class="home__container container">
-                <div class="home__content">
-                    <div class="home__img" data-animate="fadeInLeft">
-                        <img src="imagenes/foto de perfil.jpg" alt="Florencia Rosalía Castillo - Diseñadora Multimedial" class="home__photo">
-                        <div class="home__img-overlay"></div>
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title" data-animate="fadeInUp">
-                            <span class="home__name">Florencia Rosalía Castillo</span>
-                        </h1>
-                        <p class="home__profession" data-animate="fadeInUp" data-delay="200">
-                            Diseñadora Multimedial en formación | Community Manager | Creadora de contenido
-                        </p>
-                        <div class="home__buttons" data-animate="fadeInUp" data-delay="400">
-                            <a href="#proyectos" class="button button--primary">
-                                <span>Ver Proyectos</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#contacto" class="button button--outline">
-                                <span>Contactar</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll-indicator" data-animate="bounce">
-                    <span>Scroll</span>
-                    <div class="scroll-arrow">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+            <div class="hero-label"
+                 data-en="Brand — Content — Motion"
+                 data-es="Marca — Contenido — Motion">Brand — Content — Motion</div>
 
-        <!-- Sección Sobre Mí -->
-        <section class="about section" id="sobre-mi">
-            <div class="container">
-                <h2 class="section__title" data-animate="fadeInUp">
-                    Sobre <span class="accent">Mí</span>
-                </h2>
-                <div class="about__container">
-                    <div class="about__content">
-                        <div class="about__text" data-animate="fadeInLeft">
-                            <p class="about__description">
-                                Diseñadora multimedial en formación con experiencia freelance en diseño gráfico, gestión de redes sociales, producción audiovisual y desarrollo web. He trabajado con marcas locales de distintos rubros como gastronomía, mobiliario y salud, aportando soluciones creativas desde la identidad visual hasta la estrategia de comunicación digital.
-                            </p>
-                            <p class="about__description">
-                                Me destaco por mi manejo de herramientas de diseño, edición y programación, y por mi capacidad para adaptarme a distintas necesidades comunicacionales.
-                            </p>
-                        </div>
-                        <div class="about__info" data-animate="fadeInRight">
-                            <div class="info__group">
-                                <h3 class="info__title">Información de Contacto</h3>
-                                <div class="info__item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Catamarca, Argentina</span>
-                                </div>
-                                <div class="info__item">
-                                    <i class="fas fa-phone"></i>
-                                    <span>3834566284</span>
-                                </div>
-                                <div class="info__item">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>castilloflorenciarosalia@gmail.com.ar</span>
-                                </div>
-                            </div>
-                            <div class="info__group">
-                                <h3 class="info__title">Modalidad de Trabajo</h3>
-                                <p>Freelance o remoto</p>
-                            </div>
-                            <div class="info__group">
-                                <h3 class="info__title">Intereses</h3>
-                                <div class="interests">
-                                    <span class="interest-tag">Branding</span>
-                                    <span class="interest-tag">Animación</span>
-                                    <span class="interest-tag">Comunicación Digital</span>
-                                    <span class="interest-tag">Diseño Audiovisual</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <h1 class="hero-title" id="hero-heading">
+                <span class="line" data-en="MULTI"    data-es="DISEÑO">MULTI</span>
+                <span class="line" data-en="MEDIA"    data-es="MULTI">MEDIA</span>
+                <span class="line" data-en="DESIGNER" data-es="MEDIA">DESIGNER</span>
+            </h1>
 
-        <!-- Sección Herramientas -->
-        <section class="skills section">
-            <div class="container">
-                <h2 class="section__title" data-animate="fadeInUp">
-                    Herramientas y <span class="accent">Habilidades</span>
-                </h2>
-                <div class="skills__container" data-animate="fadeInUp" data-delay="200">
-                    <div class="skill__item" data-skill="photoshop">
-                        <i class="fas fa-paint-brush"></i>
-                        <span>Photoshop</span>
-                    </div>
-                    <div class="skill__item" data-skill="illustrator">
-                        <i class="fas fa-pen-nib"></i>
-                        <span>Illustrator</span>
-                    </div>
-                    <div class="skill__item" data-skill="after-effects">
-                        <i class="fas fa-video"></i>
-                        <span>After Effects</span>
-                    </div>
-                    <div class="skill__item" data-skill="premiere">
-                        <i class="fas fa-film"></i>
-                        <span>Premiere</span>
-                    </div>
-                    <div class="skill__item" data-skill="audition">
-                        <i class="fas fa-microphone"></i>
-                        <span>Audition</span>
-                    </div>
-                    <div class="skill__item" data-skill="html">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill__item" data-skill="css">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill__item" data-skill="javascript">
-                        <i class="fab fa-js-square"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill__item" data-skill="wordpress">
-                        <i class="fab fa-wordpress"></i>
-                        <span>WordPress</span>
-                    </div>
-                    <div class="skill__item" data-skill="figma">
-                        <i class="fab fa-figma"></i>
-                        <span>Figma</span>
-                    </div>
-                    <div class="skill__item" data-skill="cinema4d">
-                        <i class="fas fa-cube"></i>
-                        <span>Cinema 4D</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <p class="hero-description"
+               data-en="Branding, social media visuals, digital design, and 3D — crafting bold, cohesive experiences for brands that want to stand out."
+               data-es="Branding, contenido para redes sociales, diseño digital y 3D — creando experiencias visuales audaces y cohesivas para marcas que quieren destacar.">
+                Branding, social media visuals, digital design, and 3D — crafting bold, 
+                cohesive experiences for brands that want to stand out.
+            </p>
+        </div>
+        <div class="hero-overlay-text" aria-hidden="true">CREATIVE</div>
+        <div class="hero-graphic" aria-hidden="true">
+            <img src="img/profile.png" alt="Florencia Rosalia Castillo, Multimedia Designer">
+        </div>
+        <div class="hero-accent" aria-label="Established 2019">EST. 2019</div>
+    </section>
 
-        <!-- Sección Proyectos -->
-        <section class="projects section" id="proyectos">
-            <div class="container">
-                <h2 class="section__title" data-animate="fadeInUp">
-                    Mis <span class="accent">Proyectos</span>
-                </h2>
-                <div class="projects__container">
-                    <!-- Proyecto 1: Consultorio de Kinesiología -->
-                    <article class="project__card" data-animate="scaleIn">
-                        <div class="project__img">
-                            <img src="imagenes/proyectocon/Mesa de trabajo 1.jpg" alt="Consultorio de Kinesiología y Fisioterapia">
-                            <div class="project__overlay">
-                                <button class="project__btn" onclick="openProject('kinesiology')">
-                                    <i class="fas fa-eye"></i>
-                                    Ver Proyecto
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Consultorio de Kinesiología y Fisioterapia</h3>
-                            <p class="project__description">Diseño integral de comunicación visual y estrategia digital para servicios de salud.</p>
-                            <div class="project__tags">
-                                <span class="project__tag">Diseño Gráfico</span>
-                                <span class="project__tag">Redes Sociales</span>
-                                <span class="project__tag">Audiovisual</span>
-                            </div>
-                            <span class="project__date">Ene 2025 – Jul 2025</span>
-                        </div>
-                    </article>
-
-                    <!-- Proyecto 2: KS Hogar -->
-                    <article class="project__card" data-animate="scaleIn" data-delay="200">
-                        <div class="project__img">
-                            <img src="imagenes/proyectoks/Mesa de trabajo 1.jpg" alt="KS Hogar">
-                            <div class="project__overlay">
-                                <button class="project__btn" onclick="openProject('ks-hogar')">
-                                    <i class="fas fa-eye"></i>
-                                    Ver Proyecto
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">KS Hogar</h3>
-                            <p class="project__description">Identidad visual completa y gestión de redes sociales para marca de mobiliario.</p>
-                            <div class="project__tags">
-                                <span class="project__tag">Branding</span>
-                                <span class="project__tag">Community Management</span>
-                                <span class="project__tag">Contenido</span>
-                            </div>
-                            <span class="project__date">2024</span>
-                        </div>
-                    </article>
-
-                    <!-- Proyecto 3: Proyecto Académico -->
-                    <article class="project__card" data-animate="scaleIn" data-delay="400">
-                        <div class="project__img">
-                            <img src="imagenes/proyectofac/Mesa de trabajo 1.jpg" alt="Proyecto Académico">
-                            <div class="project__overlay">
-                                <button class="project__btn" onclick="openProject('academic')">
-                                    <i class="fas fa-eye"></i>
-                                    Ver Proyecto
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project__content">
-                            <h3 class="project__title">Proyecto Académico – Facultad</h3>
-                            <p class="project__description">Proyecto académico: Diseño de Jelly Ink, app móvil para conectar artistas visuales, compartir trabajos y colaborar en proyectos. Incluyó logotipo, identidad visual y prototipo de interfaz.</p>
-                            <div class="project__tags">
-                                <span class="project__tag">Diseño</span>
-                                <span class="project__tag">UX/UI</span>
-                                <span class="project__tag">Prototipado</span>
-                                <span class="project__tag">Branding</span>
-                                <span class="project__tag">Identidad Visual</span>
-                            </div>
-                            <span class="project__date">2024</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Contacto -->
-        <section class="contact section" id="contacto">
-            <div class="container">
-                <h2 class="section__title" data-animate="fadeInUp">
-                    <span class="accent">Contacto</span>
-                </h2>
-                <div class="contact__container-simple">
-                    <div class="contact__content-center" data-animate="fadeInUp">
-                        <h3 class="contact__title">¡Trabajemos juntos!</h3>
-                        <p class="contact__description">
-                            ¿Tienes un proyecto en mente? Me encantaría conocer más sobre tu idea.
-                        </p>
-                        
-                        <div class="contact__info-cards">
-                            <div class="info-card" data-animate="fadeInLeft" data-delay="200">
-                                <div class="info-card__icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="info-card__content">
-                                    <h4>Ubicación</h4>
-                                    <p>Catamarca, Argentina</p>
-                                </div>
-                            </div>
-                            
-                            <div class="info-card" data-animate="fadeInUp" data-delay="400">
-                                <div class="info-card__icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="info-card__content">
-                                    <h4>Teléfono</h4>
-                                    <p>3834566284</p>
-                                </div>
-                            </div>
-                            
-                            <div class="info-card" data-animate="fadeInRight" data-delay="600">
-                                <div class="info-card__icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info-card__content">
-                                    <h4>Email</h4>
-                                    <p>castilloflorenciarosalia@gmail.com.ar</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="contact__social" data-animate="fadeInUp" data-delay="800">
-                            <h4 class="social__title">Seguíme en:</h4>
-                            <div class="social__links">
-                                <a href="https://www.behance.net/rosaliacastx" class="social__link">
-                                    <i class="fab fa-behance"></i>
-                                    <span>Behance</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/florencia-rosalia-castillo/" class="social__link">
-                                    <i class="fab fa-linkedin"></i>
-                                    <span>LinkedIn</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <p class="footer__copy">
-                    © 2025 Florencia Rosalía Castillo. Todos los derechos reservados.
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+        <div class="section-label" data-en="01 — About" data-es="01 — Acerca">01 — About</div>
+        <div class="about-content reveal">
+            <h2 class="about-title" id="about-heading"
+                data-en="Multimedia Designer & Visual Storyteller"
+                data-es="Diseñadora Multimedia & Narradora Visual">
+                Multimedia Designer &amp; Visual Storyteller
+            </h2>
+            <div class="about-text">
+                <p data-en="I'm a multimedia designer based in Catamarca, Argentina, with a multidisciplinary approach that spans branding, social media content, digital design, photography, UI design, and 3D visualization. I work at the intersection of strategy and aesthetics — translating brand ideas into clear, compelling visual systems."
+                   data-es="Soy una diseñadora multimedia con sede en Catamarca, Argentina, con un enfoque multidisciplinario que abarca branding, contenido para redes sociales, diseño digital, fotografía, diseño UI y visualización 3D. Trabajo en la intersección entre la estrategia y la estética, traduciendo ideas de marca en sistemas visuales claros y efectivos.">
+                    I'm a multimedia designer based in Catamarca, Argentina, with a multidisciplinary approach 
+                    that spans branding, social media content, digital design, photography, UI design, and 3D visualization. 
+                    I work at the intersection of strategy and aesthetics — translating brand ideas into 
+                    clear, compelling visual systems.
                 </p>
-                <a href="#inicio" class="footer__top">
-                    <i class="fas fa-arrow-up"></i>
-                    Volver al inicio
-                </a>
+                <p data-en="I've worked directly with real clients across the healthcare and retail sectors, managing their digital presence from content strategy through to photography and post design. My personal projects explore brand identity, mobile app UI, and experimental 3D work in Blender and Cinema 4D — always driven by curiosity and a commitment to craft."
+                   data-es="He trabajado directamente con clientes reales en los sectores de salud y retail, gestionando su presencia digital desde la estrategia de contenido hasta la fotografía y el diseño de publicaciones. Mis proyectos personales exploran identidad de marca, UI para aplicaciones móviles y trabajo 3D experimental en Blender y Cinema 4D — siempre impulsados por la curiosidad y el compromiso con el oficio.">
+                    I've worked directly with real clients across the healthcare and retail sectors, 
+                    managing their digital presence from content strategy through to photography and post design. 
+                    My personal projects explore brand identity, mobile app UI, and experimental 3D work 
+                    in Blender and Cinema 4D — always driven by curiosity and a commitment to craft.
+                </p>
             </div>
         </div>
-    </footer>
+        <div class="about-number" aria-hidden="true">01</div>
+    </section>
 
-    <!-- Modal para proyectos -->
-    <div class="modal" id="project-modal">
-        <div class="modal__content">
-            <button class="modal__close" onclick="closeProject()">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal__body" id="modal-body">
-                <!-- El contenido se cargará dinámicamente -->
+    <!-- ========== SKILLS ========== -->
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+        <div class="section-label" data-en="02 — Tools & Skills" data-es="02 — Herramientas & Habilidades">02 — Tools &amp; Skills</div>
+        <div class="skills-content reveal">
+            <h2 class="skills-title" id="skills-heading"
+                data-en="CREATIVE ARSENAL"
+                data-es="ARSENAL CREATIVO">CREATIVE ARSENAL</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-number" aria-hidden="true">01</div>
+                    <h3 class="skill-category-title"
+                        data-en="Design & Motion"
+                        data-es="Diseño & Motion">Design &amp; Motion</h3>
+                    <ul class="skill-tags" aria-label="Design and motion tools">
+                        <li class="skill-tag">Photoshop</li>
+                        <li class="skill-tag">Illustrator</li>
+                        <li class="skill-tag">Figma</li>
+                        <li class="skill-tag">After Effects</li>
+                        <li class="skill-tag">Premiere Pro</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-number" aria-hidden="true">02</div>
+                    <h3 class="skill-category-title"
+                        data-en="3D & CGI"
+                        data-es="3D & CGI">3D &amp; CGI</h3>
+                    <ul class="skill-tags" aria-label="3D and CGI tools">
+                        <li class="skill-tag">Blender</li>
+                        <li class="skill-tag">Cinema 4D</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-number" aria-hidden="true">03</div>
+                    <h3 class="skill-category-title"
+                        data-en="Web & Code"
+                        data-es="Web & Código">Web &amp; Code</h3>
+                    <ul class="skill-tags" aria-label="Web and code tools">
+                        <li class="skill-tag">HTML</li>
+                        <li class="skill-tag">CSS</li>
+                        <li class="skill-tag">JavaScript</li>
+                        <li class="skill-tag">PHP</li>
+                        <li class="skill-tag">WordPress</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills-bg-text" aria-hidden="true">SKILLS</div>
+    </section>
+
+    <!-- ========== CLIENT WORK ========== -->
+    <section class="clients" id="work" aria-labelledby="work-heading">
+        <div class="projects-header reveal">
+            <div class="section-label"
+                 data-en="03 — Client Work"
+                 data-es="03 — Trabajo de Clientes">03 — Client Work</div>
+            <h2 class="projects-title" id="work-heading"
+                data-en="CLIENTS"
+                data-es="CLIENTES">CLIENTS</h2>
+            <p class="projects-subtitle"
+               data-en="Real client work across the healthcare and retail sectors — managing digital presence, content strategy, photography, and visual identity."
+               data-es="Trabajo real con clientes en los sectores de salud y retail — gestión de presencia digital, estrategia de contenido, fotografía e identidad visual.">
+                Real client work across the healthcare and retail sectors — managing digital presence, 
+                content strategy, photography, and visual identity.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 01: Medical Clinic -->
+            <article class="project-item reveal" data-project="medical-office" role="button" tabindex="0" aria-label="View Medical Office project">
+                <div class="project-image">
+                    <div class="project-number" aria-hidden="true">01</div>
+                    <img src="img/proyectocon/Mesa de trabajo 1.jpg"
+                         alt="Medical Clinic — social media content and branding">
+                </div>
+                <div class="project-info">
+                    <div class="project-category"
+                         data-en="Client Work — Community Manager / 2024"
+                         data-es="Trabajo de Cliente — Community Manager / 2024">Client Work — Community Manager / 2024</div>
+                    <h3 class="project-title"
+                        data-en="MEDICAL CLINIC"
+                        data-es="CONSULTORIO MÉDICO">MEDICAL CLINIC</h3>
+                    <p class="project-description"
+                       data-en="Social media management and visual content design for a modern medical practice. Responsibilities included content strategy, post and story design, brand photography, and maintaining a consistent visual identity across platforms."
+                       data-es="Gestión de redes sociales y diseño de contenido visual para un consultorio médico moderno. Las responsabilidades incluyeron estrategia de contenido, diseño de publicaciones e historias, fotografía de marca y mantenimiento de una identidad visual coherente en todas las plataformas.">
+                        Social media management and visual content design for a modern medical practice. 
+                        Responsibilities included content strategy, post and story design, brand photography, 
+                        and maintaining a consistent visual identity across platforms.
+                    </p>
+                    <div class="project-tags" aria-label="Tools and disciplines used">
+                        <span class="tag" data-en="Social Media"    data-es="Redes Sociales">Social Media</span>
+                        <span class="tag" data-en="Content Strategy" data-es="Estrategia de Contenido">Content Strategy</span>
+                        <span class="tag" data-en="Photography"     data-es="Fotografía">Photography</span>
+                        <span class="tag" data-en="Branding"        data-es="Branding">Branding</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 02: Furniture Store -->
+            <article class="project-item reveal" data-project="furniture-store" role="button" tabindex="0" aria-label="View Furniture Store project">
+                <div class="project-image">
+                    <div class="project-number" aria-hidden="true">02</div>
+                    <img src="data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='800' height='600' fill='%23C73E1D'/%3E%3Crect x='150' y='150' width='500' height='300' fill='%230A0A0A'/%3E%3Crect x='200' y='200' width='200' height='200' fill='%23F5F1E8'/%3E%3Crect x='450' y='250' width='150' height='150' fill='%23B9FF66'/%3E%3C/svg%3E"
+                         alt="Furniture Store — social media and product photography">
+                </div>
+                <div class="project-info">
+                    <div class="project-category"
+                         data-en="Client Work — Community Manager / 2024"
+                         data-es="Trabajo de Cliente — Community Manager / 2024">Client Work — Community Manager / 2024</div>
+                    <h3 class="project-title"
+                        data-en="FURNITURE STORE"
+                        data-es="MUEBLERÍA">FURNITURE STORE</h3>
+                    <p class="project-description"
+                       data-en="Social media strategy and content creation for a contemporary furniture retailer. Work covered product photography, lifestyle content, post design, branding support, and building a cohesive visual language that drove audience engagement."
+                       data-es="Estrategia de redes sociales y creación de contenido para una mueblería contemporánea. El trabajo incluyó fotografía de productos, contenido lifestyle, diseño de publicaciones, apoyo de branding y la construcción de un lenguaje visual coherente que impulsó el engagement de la audiencia.">
+                        Social media strategy and content creation for a contemporary furniture retailer. 
+                        Work covered product photography, lifestyle content, post design, branding support, 
+                        and building a cohesive visual language that drove audience engagement.
+                    </p>
+                    <div class="project-tags" aria-label="Tools and disciplines used">
+                        <span class="tag" data-en="Social Media" data-es="Redes Sociales">Social Media</span>
+                        <span class="tag" data-en="Photography"  data-es="Fotografía">Photography</span>
+                        <span class="tag" data-en="Branding"     data-es="Branding">Branding</span>
+                        <span class="tag" data-en="Strategy"     data-es="Estrategia">Strategy</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ========== PERSONAL PROJECTS ========== -->
+    <section class="personal-projects" id="projects" aria-labelledby="projects-heading">
+        <div class="projects-header reveal">
+            <div class="section-label"
+                 data-en="04 — Personal Projects"
+                 data-es="04 — Proyectos Personales">04 — Personal Projects</div>
+            <h2 class="projects-title" id="projects-heading"
+                data-en="PROJECTS"
+                data-es="PROYECTOS">PROJECTS</h2>
+            <p class="projects-subtitle"
+               data-en="Personal explorations spanning brand identity, mobile app UI, and experimental 3D work in Blender and Cinema 4D — driven by curiosity and a commitment to craft."
+               data-es="Exploraciones personales que abarcan identidad de marca, UI para apps móviles y trabajo 3D experimental en Blender y Cinema 4D — impulsadas por la curiosidad y el compromiso con el oficio.">
+                Personal explorations spanning brand identity, mobile app UI, and experimental 3D work 
+                in Blender and Cinema 4D — driven by curiosity and a commitment to craft.
+            </p>
+        </div>
+
+        <!-- HOVER EXPAND CAROUSEL -->
+        <div class="hover-expand-carousel reveal" role="list" aria-label="Personal projects carousel">
+
+            <!-- Card 03: App Branding -->
+            <div class="he-card" data-project="app-branding" role="listitem button" tabindex="0" aria-label="View App Branding project">
+                <img src="data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='800' height='600' fill='%230A0A0A'/%3E%3Crect x='200' y='100' width='400' height='400' rx='40' fill='%23F5F1E8'/%3E%3Crect x='250' y='150' width='300' height='60' fill='%23C73E1D'/%3E%3Ccircle cx='400' cy='350' r='80' fill='%23B9FF66'/%3E%3Crect x='280' y='460' width='240' height='20' rx='10' fill='%23C73E1D'/%3E%3C/svg%3E"
+                     alt="App Branding">
+                <div class="he-overlay"></div>
+                <div class="he-info">
+                    <span class="he-number" aria-hidden="true">03</span>
+                    <div class="he-meta">
+                        <span class="he-category" data-en="Branding + UI / 2023" data-es="Branding + UI / 2023">Branding + UI / 2023</span>
+                        <h3 class="he-title" data-en="APP BRANDING" data-es="BRANDING APP">APP BRANDING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 04: City Renders -->
+            <div class="he-card" data-project="city-3d" role="listitem button" tabindex="0" aria-label="View City Renders project">
+                <img src="data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF10F0;stop-opacity:0.6' /%3E%3Cstop offset='100%25' style='stop-color:%230A0A0A;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23sky)'/%3E%3Crect x='50' y='300' width='80' height='300' fill='%230A0A0A'/%3E%3Crect x='150' y='250' width='100' height='350' fill='%231a1a1a'/%3E%3Crect x='270' y='200' width='90' height='400' fill='%230A0A0A'/%3E%3Crect x='380' y='280' width='110' height='320' fill='%231a1a1a'/%3E%3Crect x='510' y='220' width='95' height='380' fill='%230A0A0A'/%3E%3Crect x='625' y='260' width='85' height='340' fill='%231a1a1a'/%3E%3C/svg%3E"
+                     alt="City Renders">
+                <div class="he-overlay"></div>
+                <div class="he-info">
+                    <span class="he-number" aria-hidden="true">04</span>
+                    <div class="he-meta">
+                        <span class="he-category" data-en="3D Design / 2023" data-es="Diseño 3D / 2023">3D Design / 2023</span>
+                        <h3 class="he-title" data-en="CITY RENDERS" data-es="RENDERS CIUDAD">CITY RENDERS</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 05: Scene Studies -->
+            <div class="he-card" data-project="scenes-3d" role="listitem button" tabindex="0" aria-label="View Scene Studies project">
+                <img src="data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='800' height='600' fill='%230A0A0A'/%3E%3Ccircle cx='400' cy='300' r='180' fill='%23C73E1D' opacity='0.3'/%3E%3Ccircle cx='400' cy='300' r='120' fill='%23B9FF66' opacity='0.5'/%3E%3Crect x='320' y='220' width='160' height='160' fill='%23F5F1E8' opacity='0.2' transform='rotate(45 400 300)'/%3E%3C/svg%3E"
+                     alt="Scene Studies">
+                <div class="he-overlay"></div>
+                <div class="he-info">
+                    <span class="he-number" aria-hidden="true">05</span>
+                    <div class="he-meta">
+                        <span class="he-category" data-en="3D Design / 2023" data-es="Diseño 3D / 2023">3D Design / 2023</span>
+                        <h3 class="he-title" data-en="SCENE STUDIES" data-es="ESTUDIOS ESCENA">SCENE STUDIES</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 06: Spirited Away -->
+            <div class="he-card" data-project="spirited-away" role="listitem button" tabindex="0" aria-label="View Spirited Away project">
+                <img src="data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='ghibli' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23B9FF66;stop-opacity:0.4' /%3E%3Cstop offset='50%25' style='stop-color:%23C73E1D;stop-opacity:0.6' /%3E%3Cstop offset='100%25' style='stop-color:%23FF10F0;stop-opacity:0.4' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='%230A0A0A'/%3E%3Cpath d='M200,500 Q300,200 400,300 T600,500' fill='none' stroke='url(%23ghibli)' stroke-width='60'/%3E%3Ccircle cx='400' cy='200' r='100' fill='%23F5F1E8' opacity='0.3'/%3E%3C/svg%3E"
+                     alt="Spirited Away">
+                <div class="he-overlay"></div>
+                <div class="he-info">
+                    <span class="he-number" aria-hidden="true">06</span>
+                    <div class="he-meta">
+                        <span class="he-category" data-en="3D Design / 2023" data-es="Diseño 3D / 2023">3D Design / 2023</span>
+                        <h3 class="he-title" data-en="SPIRITED AWAY" data-es="EL VIAJE DE CHIHIRO">SPIRITED AWAY</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ========== PROJECT MODAL ========== -->
+    <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+        <button class="modal-close" aria-label="Close project">&times;</button>
+        <div class="modal-content">
+            <div class="modal-scroll">
+                <div class="modal-header">
+                    <div class="modal-category"></div>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-description" id="modalDesc"></p>
+                </div>
+                <div class="modal-gallery" aria-label="Project images"></div>
+                <div class="modal-tags" aria-label="Project tags"></div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <!-- ========== SERVICES ========== -->
+    <section class="skills" id="services" aria-labelledby="services-heading">
+        <div class="section-label"
+             data-en="05 — Services"
+             data-es="05 — Servicios">05 — Services</div>
+        <div class="skills-content reveal">
+            <h2 class="skills-title" id="services-heading"
+                data-en="WHAT I DO"
+                data-es="LO QUE HAGO">WHAT I DO</h2>
 
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-number" aria-hidden="true">01</div>
+                    <h3 class="skill-category-title"
+                        data-en="Social Media & Content"
+                        data-es="Redes Sociales & Contenido">Social Media &amp; Content</h3>
+                    <p data-en="Content strategy, post and story design, editorial graphics, and motion assets for brands across Instagram, Facebook, and other platforms."
+                       data-es="Estrategia de contenido, diseño de publicaciones e historias, gráficas editoriales y motion assets para marcas en Instagram, Facebook y otras plataformas.">
+                        Content strategy, post and story design, editorial graphics, and motion assets 
+                        for brands across Instagram, Facebook, and other platforms.
+                    </p>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-number" aria-hidden="true">02</div>
+                    <h3 class="skill-category-title"
+                        data-en="Branding & UI Design"
+                        data-es="Branding & Diseño UI">Branding &amp; UI Design</h3>
+                    <p data-en="Logo design, brand guidelines, brand manuals, and complete visual identity systems — extended into app and web interface design with components, layouts, and digital design systems in Figma."
+                       data-es="Diseño de logotipos, guías de marca, manuales de marca y sistemas de identidad visual completos — extendidos al diseño de interfaces para apps y web con componentes, layouts y sistemas de diseño en Figma.">
+                        Logo design, brand guidelines, brand manuals, and complete visual identity systems — 
+                        extended into app and web interface design with components, layouts, and digital 
+                        design systems in Figma.
+                    </p>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-number" aria-hidden="true">03</div>
+                    <h3 class="skill-category-title"
+                        data-en="Photography & 3D Visuals"
+                        data-es="Fotografía & Visuales 3D">Photography &amp; 3D Visuals</h3>
+                    <p data-en="Product and lifestyle photography for digital campaigns, plus 3D renders and scenes produced in Blender and Cinema 4D — covering the full range of visual asset creation for brands and creative projects."
+                       data-es="Fotografía de producto y lifestyle para campañas digitales, más renders 3D y escenas producidos en Blender y Cinema 4D — cubriendo toda la gama de creación de recursos visuales para marcas y proyectos creativos.">
+                        Product and lifestyle photography for digital campaigns, plus 3D renders and scenes 
+                        produced in Blender and Cinema 4D — covering the full range of visual asset creation 
+                        for brands and creative projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="skills-bg-text" aria-hidden="true">SERVICES</div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <div class="section-label"
+             data-en="06 — Get In Touch"
+             data-es="06 — Contacto">06 — Get In Touch</div>
+
+        <h2 class="contact-title reveal" id="contact-heading">
+            <span data-en="AVAILABLE FOR"   data-es="DISPONIBLE">AVAILABLE FOR</span><br>
+            <span class="highlight"
+                  data-en="CREATIVE"        data-es="PARA">CREATIVE</span><br>
+            <span data-en="OPPORTUNITIES"   data-es="OPORTUNIDADES">OPPORTUNITIES</span>
+        </h2>
+
+        <p class="contact-subtitle reveal"
+           data-en="Open to full-time roles, freelance projects, and long-term collaborations with creative studios, agencies, and brands."
+           data-es="Abierta a posiciones de tiempo completo, proyectos freelance y colaboraciones a largo plazo con estudios creativos, agencias y marcas.">
+            Open to full-time roles, freelance projects, and long-term collaborations 
+            with creative studios, agencies, and brands.
+        </p>
+
+        <div class="contact-bottom">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3 data-en="Email" data-es="Email">Email</h3>
+                    <p>
+                        <a href="/cdn-cgi/l/email-protection#8ceae0e3fee9e2efe5edcce9f4ede1fce0e9a2efe3e1" aria-label="Send email to Florencia">
+                            <span class="__cf_email__" data-cfemail="d3b5bfbca1b6bdb0bab293b6abb2bea3bfb6fdb0bcbe"><span class="__cf_email__" data-cfemail="b6f5d7c5c2dfdadad9d0dad9c4d3d8d5dfd7c4d9c5d7dadfd7f6d1dbd7dfda98d5d9db">[email&#160;protected]</span></span>
+                        </a>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <h3 data-en="Based In" data-es="Ubicación">Based In</h3>
+                    <p>Catamarca, Argentina</p>
+                </div>
+                <div class="contact-item">
+                    <h3 data-en="Availability" data-es="Disponibilidad">Availability</h3>
+                    <p data-en="Open to work" data-es="Disponible para trabajar">Open to work</p>
+                </div>
+            </div>
+
+            <nav class="social-links" aria-label="Social media and professional profiles">
+                <a href="#instagram" aria-label="Florencia on Instagram" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.behance.net/rosaliacastx"   aria-label="Florencia on Behance"   rel="noopener noreferrer">Behance</a>
+                <a href="https://www.linkedin.com/in/florencia-rosalia-castillo/"  aria-label="Florencia on LinkedIn"  rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
+        <div class="contact-bg-text" aria-hidden="true">CONTACT</div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer role="contentinfo">
+        <p>
+            &copy; 2026 Florencia Rosalia Castillo.
+            <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span>
+            &nbsp;·&nbsp;
+            <span data-en="Multimedia Designer — Catamarca, Argentina"
+                           data-es="Diseñadora Multimedia — Catamarca, Argentina">Multimedia Designer — Catamarca, Argentina</span>
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
 </html>
